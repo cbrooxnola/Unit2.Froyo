@@ -1,16 +1,16 @@
 let input = window.prompt('Please enter your orders, separated by commas');
 let arr = input.split(',');
-//console.log(arr);
-// let table = {};
-// for (let i = 0; i < arr.length; i++){
-//  if (table.hasOwnProperty(arr[i])){
-//     table[arr[i]] += 1;
-//   }
-//   else {
-//     table[arr[i]] = 1;
-//   }
-// }
-// console.log(table);
+console.log(arr);
+let table = {};
+for (let i = 0; i < arr.length; i++){
+ if (table.hasOwnProperty(arr[i])){
+    table[arr[i]] += 1;
+  }
+  else {
+    table[arr[i]] = 1;
+  }
+}
+console.log(table);
 // function generateTable(){
 //   const tbl = document.createElement('table');
 //   const tblBody = document.createElement('tbody');
@@ -28,3 +28,4 @@ let arr = input.split(',');
 //   document.body.appendChild(tbl);
 //   tbl.setAttribute('border', '2');
 // }
+// generateTable(table);
